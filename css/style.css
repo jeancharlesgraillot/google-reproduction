@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: arial,sans-serif;
+  font-size: 0.8rem;
+}
+/*HEADER*/
+
+#header{
+  width: 100%;
+  height: 10%;
+  text-align: right;
+  padding-top: 1%;
+  margin-right: 1%;
+}
+
+#header a{
+  text-decoration: none;
+  padding-right: 15px;
+  color: #5f5f4f;
+}
+
+
+/*a #mail:hover{
+  text-decoration: underline;
+  color: #5f5f4f;
+}*/
+
+
+#header img{
+  width: 30px;
+  height: 30px;
+}
+
+#header #connexion{
+  background-color: #4583ee;
+  line-height: 28px;
+  border-radius: 2px;
+  text-align: center;
+  padding-left: 15px;
+  margin-right: 2%;
+  color: white;
+}
+
+.element{
+  display: inline-block;
+}
+
+.element, #mail, #images, #connexion{
+  vertical-align: middle;
+}
+
+/*MAIN*/
+
+#main {
+width: 100%;
+height:70%;
+margin-top: 40vh; /* poussé de 30% de hauteur de viewport */
+transform: translateY(-40%); /* tiré de 30% de sa propre hauteur */
+margin-bottom: 1%;
+}
+
+#logo{
+  margin-bottom: 25px;
+}
+
+#search{
+  width: 40%;
+  height: 45px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 1px 1px 0px #cccccc;
+}
+
+#search:focus{
+  box-shadow: 2px 2px 0px #cccccc;
+}
+
+#search:hover{
+  box-shadow: 2px 2px 0px #cccccc;
+}
+
+.button{
+  background-color: #f2f2f2 ;
+  height: 5%;
+  width: 12%;
+  line-height: 25px;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.button:hover{
+  color: black;
+  border: 1px #e4e4e4 solid;
+}
+
+/*FOOTER*/
+
+#footer{
+  width: 100%
+  height: 20%;
+}
+
+#country{
+
+  border: 1px solid #e4e4e4;
+  line-height: 40px;
+  color: #717171;
+  background-color: #f2f2f2;
+  padding-left: 30px;
+}
+
+#liens{
+
+  border: 1px solid #e4e4e4;
+  line-height: 40px;
+  color: #717171;
+  background-color: #f2f2f2;
+  padding-left: 30px;
+}
+
+ul li{
+  display: inline-block;
+  list-style: none;
+  padding-right: 30px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #717171;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+  color: #717171;
+}
+
+ul #separator{
+  padding-right: 47%;
+}
