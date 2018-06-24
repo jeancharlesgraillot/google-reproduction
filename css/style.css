@@ -3,13 +3,23 @@
   padding: 0;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  position:relative;
+  min-height: 100%;
   font-family: arial,sans-serif;
   font-size: 0.8rem;
 }
+
+#footer{
+  position: absolute; bottom: 0; left: 0; right: 0;
+}
 /*HEADER*/
 
-#header{
+header{
   width: 100%;
   height: 10%;
   text-align: right;
@@ -17,7 +27,7 @@ body{
   margin-right: 1%;
 }
 
-#header a{
+header a{
   text-decoration: none;
   padding-right: 15px;
   color: #5f5f4f;
@@ -30,12 +40,12 @@ body{
 }*/
 
 
-#header img{
+header img{
   width: 30px;
   height: 30px;
 }
 
-#header #connexion{
+header #connexion{
   background-color: #4583ee;
   line-height: 28px;
   border-radius: 2px;
@@ -49,25 +59,27 @@ body{
   display: inline-block;
 }
 
-.element, #mail, #images, #connexion{
+.element, #apps{
   vertical-align: middle;
 }
 
 /*MAIN*/
 
-#main {
+main {
 width: 100%;
 height:70%;
-margin-top: 40vh; /* poussé de 30% de hauteur de viewport */
-transform: translateY(-40%); /* tiré de 30% de sa propre hauteur */
-margin-bottom: 1%;
+text-align: center;
+margin-top: 5%;
 }
+
 
 #logo{
   margin-bottom: 25px;
 }
 
 #search{
+  display:block;
+  margin:auto;
   width: 40%;
   height: 45px;
   margin-bottom: 25px;
@@ -99,9 +111,10 @@ margin-bottom: 1%;
 
 /*FOOTER*/
 
-#footer{
-  width: 100%
-  height: 20%;
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 
 #country{
@@ -122,6 +135,11 @@ margin-bottom: 1%;
   padding-left: 30px;
 }
 
+ul{
+  display: inline-block;
+  width: 49%;
+}
+
 ul li{
   display: inline-block;
   list-style: none;
@@ -129,6 +147,7 @@ ul li{
 }
 
 ul li a{
+
   text-decoration: none;
   color: #717171;
 }
@@ -138,6 +157,6 @@ ul li a:hover{
   color: #717171;
 }
 
-ul #separator{
-  padding-right: 47%;
+ul#right{
+  text-align: right;
 }
